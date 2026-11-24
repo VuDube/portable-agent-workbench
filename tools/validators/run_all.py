@@ -1,6 +1,6 @@
 from pathlib import Path
 import hashlib, json, re, subprocess, sys
-root=Path('/home/ubuntu/portable-agent-workbench')
+root=Path(__file__).resolve().parents[2]
 report_dir=root/'11-EVALUATION/REPORTS'; report_dir.mkdir(parents=True,exist_ok=True)
 results=[]
 def check(test_id, objective, status, actual, evidence):
@@ -74,18 +74,20 @@ check('REG-001','Run repository structural validator','PASS' if proc.returncode=
 
 # Baseline archive reconciliation.
 import zipfile
-archive=Path('/home/ubuntu/upload/portable-agent-workbench-v0.1.0-blueprint.zip')
-with zipfile.ZipFile(archive) as z: expected=sorted(n.removeprefix('portable-agent-workbench/') for n in z.namelist())
-actual=sorted(str(p.relative_to(root)) for p in root.rglob('*') if p.is_file() and '.git' not in p.parts and not str(p.relative_to(root)).startswith('11-EVALUATION/REPORTS/'))
-# Current tree includes additions, so compare only the original baseline set.
-base=[x for x in expected if (root/x).is_file()]
-check('BASE-001','Confirm every original baseline file remains present','PASS' if base==expected else 'FAIL',f'baseline_present={len(base)}/{len(expected)}', 'archive SHA-256 recorded in docs/BASELINE-AUDIT.md')
+archive_candidates=[Path('/home/ubuntu/upload/portable-agent-workbench-v0.1.0-blueprint.zip'),root.parent/'portable-agent-workbench-v0.1.0-blueprint.zip']
+archive=next((p for p in archive_candidates if p.is_file()),None)
+if archive:
+    with zipfile.ZipFile(archive) as z: expected=sorted(n.removeprefix('portable-agent-workbench/') for n in z.namelist())
+    base=[x for x in expected if (root/x).is_file()]
+    check('BASE-001','Confirm every original baseline file remains present','PASS' if base==expected else 'FAIL',f'baseline_present={len(base)}/{len(expected)}', 'archive SHA-256 recorded in docs/BASELINE-AUDIT.md')
+else:
+    check('BASE-001','Confirm every original baseline file remains present','BLOCKED','Source ZIP is not available in this CI checkout; remote baseline manifest remains the evidence source','docs/BASELINE-AUDIT.md')
 
 commit=subprocess.check_output(['git','-C',str(root),'rev-parse','HEAD'],text=True).strip()
-passed=sum(r['status']=='PASS' for r in results); failed=sum(r['status']=='FAIL' for r in results)
-report={'tested_commit':commit,'tests':results,'summary':{'passed':passed,'failed':failed,'blocked':0,'not_run':0}}
+passed=sum(r['status']=='PASS' for r in results); failed=sum(r['status']=='FAIL' for r in results); blocked=sum(r['status']=='BLOCKED' for r in results); not_run=sum(r['status']=='NOT RUN' for r in results)
+report={'tested_commit':commit,'tests':results,'summary':{'passed':passed,'failed':failed,'blocked':blocked,'not_run':not_run}}
 (root/'11-EVALUATION/REPORTS/validation-report.json').write_text(json.dumps(report,indent=2)+'\n')
-md=['# Automated validation report','','- Tested commit: `'+commit+'`',f'- Passed: {passed}',f'- Failed: {failed}','- Blocked: 0','- Not run: 0','']
+md=['# Automated validation report','','- Tested commit: `'+commit+'`',f'- Passed: {passed}',f'- Failed: {failed}',f'- Blocked: {blocked}',f'- Not run: {not_run}','']
 for r in results: md.append(f"## {r['test_id']} — {r['status']}\n\n{r['objective']} Actual: {r['actual']} Evidence: `{r['evidence']}`.\n")
 (root/'11-EVALUATION/REPORTS/validation-report.md').write_text('\n'.join(md)+'\n')
 print(json.dumps(report['summary']))
