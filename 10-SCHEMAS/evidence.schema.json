@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/paw/schemas/evidence.schema.json",
+  "title": "PAW Evidence Record",
+  "type": "object",
+  "required": [
+    "evidence_id",
+    "claim",
+    "source",
+    "observation",
+    "confidence",
+    "status"
+  ],
+  "properties": {
+    "evidence_id": {
+      "type": "string",
+      "pattern": "^EV-[0-9]{3,}$"
+    },
+    "claim": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "locator": {
+      "type": "string"
+    },
+    "source_revision": {
+      "type": "string"
+    },
+    "observation": {
+      "type": "string"
+    },
+    "interpretation": {
+      "type": "string"
+    },
+    "confidence": {
+      "enum": [
+        "confirmed",
+        "strongly-supported",
+        "probable",
+        "tentative",
+        "unknown"
+      ]
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "enum": [
+        "verified",
+        "partially-verified",
+        "unverified",
+        "contradicted",
+        "superseded"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

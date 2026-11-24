@@ -1,0 +1,238 @@
+{
+  "archive": "portable-agent-workbench-v0.1.0-blueprint.zip",
+  "archive_bytes": 44142,
+  "archive_sha256": "8abf2aa3697f14bfb4f4a9dc34e4ddcef54a4adc2637b3529b6fa7bb2cbb6949",
+  "archive_member_count": 45,
+  "archive_file_count": 45,
+  "archive_directory_count": 0,
+  "extracted_file_count": 45,
+  "extracted_directory_count": 39,
+  "unsafe_paths": [],
+  "files": [
+    {
+      "path": "00-START-HERE/CAPABILITY-MATRIX.md",
+      "size": 1173,
+      "sha256": "ef1a8ca0ba2c0b5365c788e1fa60c9de4784e911db3ef0b0007ea4bcf4024577"
+    },
+    {
+      "path": "00-START-HERE/PLATFORM-COMPATIBILITY.md",
+      "size": 1955,
+      "sha256": "eab4128222811a1ab466dd6d821f3d752bc5811d0b64caa619ea2e173de7f9c6"
+    },
+    {
+      "path": "00-START-HERE/QUICK-START.md",
+      "size": 1442,
+      "sha256": "5894cfbe999f74c9f30b93ce8c06667e0ca9d5cb2f9008a82ca37d9677d7110f"
+    },
+    {
+      "path": "01-CORE-SYSTEM/MASTER-SYSTEM-INSTRUCTIONS.md",
+      "size": 8159,
+      "sha256": "9bd5eead3f4e7352730c5478db9f04727afab7ba728291047caae1f166041d8d"
+    },
+    {
+      "path": "02-MASTER-ORCHESTRATION/MASTER-ORCHESTRATOR.md",
+      "size": 3550,
+      "sha256": "1bece7ac263c7c95ca0ff1126a1d7b4082ffb1bf64a29abd7a8e4c1235ef11bf"
+    },
+    {
+      "path": "03-AGENTS/core/requirements-architect/AGENT.md",
+      "size": 1487,
+      "sha256": "961e3a1951b740d3763ddd8c8268600006a6fe0dee2f47e09ca7dd4c0296a1cb"
+    },
+    {
+      "path": "03-AGENTS/engineering/software-architect/AGENT.md",
+      "size": 1346,
+      "sha256": "4d407f4cab7bff9eadba9920af8d2132ce4822354bf0944f9b14952e67fd2759"
+    },
+    {
+      "path": "03-AGENTS/quality/qa-auditor/AGENT.md",
+      "size": 976,
+      "sha256": "f93e243fdc6792667526e533b0925851c04f08351180c89efa56fbf3446964a7"
+    },
+    {
+      "path": "03-AGENTS/research/research-director/AGENT.md",
+      "size": 1327,
+      "sha256": "ef7e7a5e5bc8657324764530ae407a813919b4d86f763398c54dbd5b6ecf8c2e"
+    },
+    {
+      "path": "03-AGENTS/reverse-engineering/forensic-repository-analyst/AGENT.md",
+      "size": 2172,
+      "sha256": "f18138db58958776f84f724982f3981542cc53001839dcdb64e732546828b2d1"
+    },
+    {
+      "path": "04-SKILLS/cross-platform-adaptation/SKILL.md",
+      "size": 1035,
+      "sha256": "502e6e5e7900cd234fd2790475603601de98405bbb16b06c744fd466bc83f054"
+    },
+    {
+      "path": "04-SKILLS/deep-research/SKILL.md",
+      "size": 1349,
+      "sha256": "3020d73b8f5eadf16885b33b8ed466c3febe1970369c4f8f646e6f7826e97c06"
+    },
+    {
+      "path": "04-SKILLS/evidence-ledger/SKILL.md",
+      "size": 850,
+      "sha256": "7aba648b6cef0c358abfd08f1b39e96aca353fb10501844b0d225a806e113b47"
+    },
+    {
+      "path": "04-SKILLS/repository-forensic-audit/SKILL.md",
+      "size": 1659,
+      "sha256": "bbf2ce78512383939ba6222a5874fb66c455f1cb8a281cb9cb6eb3158865dc3e"
+    },
+    {
+      "path": "04-SKILLS/study-build-check-refine/SKILL.md",
+      "size": 1373,
+      "sha256": "d06cbb723b6d91648f519c32ea739c21c18b75d1256dfcf0fd495dea4688e728"
+    },
+    {
+      "path": "05-WORKFLOWS/forensic-repository-audit/WORKFLOW.md",
+      "size": 755,
+      "sha256": "ffff1c5af0a51405801429eaea557425ffbc7f112a9ffa21c59de77a20a377cd"
+    },
+    {
+      "path": "05-WORKFLOWS/product-development/WORKFLOW.md",
+      "size": 716,
+      "sha256": "cc04b0d047e7f8d511bd3ad269557e6e12125dc98f7662d8c5914b049d61699e"
+    },
+    {
+      "path": "06-REA-INTELLIGENCE/INVESTIGATION-PROTOCOL.md",
+      "size": 1498,
+      "sha256": "2f7864c0dbe7290bd542eaa6edccae7e516012f0a4f3935e6385ad0cd9679998"
+    },
+    {
+      "path": "07-CRAFT-LIFECYCLE/STUDY-BUILD-CHECK-REFINE.md",
+      "size": 907,
+      "sha256": "82d212c62f5748c31a57a03efa3148fde71324c5de93f6ac0a35fdc91dbf24ec"
+    },
+    {
+      "path": "08-PLATFORM-ADAPTERS/AGORA/COMPATIBILITY-TEST.md",
+      "size": 948,
+      "sha256": "14ffb025d85dac09137f9ae266b13ab9fdfa4780daeb961221da30a07e63bd32"
+    },
+    {
+      "path": "08-PLATFORM-ADAPTERS/AGORA/README.md",
+      "size": 2320,
+      "sha256": "29b62a203419fa622a7a6de0dd28d4c41b5201a65c476df1a29be62652cb9fdf"
+    },
+    {
+      "path": "08-PLATFORM-ADAPTERS/CHATGPT/README.md",
+      "size": 722,
+      "sha256": "9e6331e81a032b034c53ad00a39d29944398da51a1f8f57d4f33f7682eac2532"
+    },
+    {
+      "path": "08-PLATFORM-ADAPTERS/DEEPSEEK/README.md",
+      "size": 602,
+      "sha256": "04a8639bdf02e94386b2eb3b2f3b98f6582492ee6cc88addb0a1e32bf1417a72"
+    },
+    {
+      "path": "08-PLATFORM-ADAPTERS/GOOGLE-AI-STUDIO/README.md",
+      "size": 779,
+      "sha256": "754876810afa11868b53a2497f3edb3a61ada87bbba86f134ce702e9e1f5d904"
+    },
+    {
+      "path": "08-PLATFORM-ADAPTERS/GOOGLE-GEMINI/README.md",
+      "size": 592,
+      "sha256": "56949956f8d25682926af77e1c6579d1d4cedda07c0e1a53dda4dcefadad5191"
+    },
+    {
+      "path": "08-PLATFORM-ADAPTERS/MANUS/README.md",
+      "size": 481,
+      "sha256": "80538985c2f50c86baa50f76cc8683a8af3718749cda28ac5a61c08240f0101e"
+    },
+    {
+      "path": "08-PLATFORM-ADAPTERS/MISTRAL-VIBE/README.md",
+      "size": 373,
+      "sha256": "c0bc5ade8fb5bc2f67352d0aac493230052ec2ed8468a7b5df73e848af897e72"
+    },
+    {
+      "path": "08-PLATFORM-ADAPTERS/QWEN-DEEPSEEK/README.md",
+      "size": 533,
+      "sha256": "63a9c74fd54bf0e3664023a22283b2434e6fa41f2d4f9edd2857303ab8b7ba24"
+    },
+    {
+      "path": "08-PLATFORM-ADAPTERS/QWEN/README.md",
+      "size": 698,
+      "sha256": "3cc6a4e69bfe88002825e47705fffbf7f1a817306218a292682ffd3d63e4e533"
+    },
+    {
+      "path": "09-TEMPLATES/PROJECT-STATE-TEMPLATE.md",
+      "size": 630,
+      "sha256": "a2c6b5c23fa6645b1c89b4f626388e80ca91cb8b9b72adb49ee8e05aee38f959"
+    },
+    {
+      "path": "10-SCHEMAS/agent.schema.json",
+      "size": 1370,
+      "sha256": "6a4567e5d221272191c885268b8ce423beea825188df8e65ef0db1a9d71c81db"
+    },
+    {
+      "path": "10-SCHEMAS/evidence.schema.json",
+      "size": 1169,
+      "sha256": "675f60e71691e97331c32971afd71cac952eb6b0ce10c4af6d94f13149861484"
+    },
+    {
+      "path": "13-REFERENCE/UPSTREAM-SOURCES.md",
+      "size": 2594,
+      "sha256": "877dd53b44ed9cf6160c2cd47d5fa5b58915c5a676284b37438e7e1fb6d29011"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "size": 434,
+      "sha256": "d1f950e2d75b26bb52965fce92e8dbbc251f8c4427b5f43d41c7e823903b65dd"
+    },
+    {
+      "path": "LICENSE",
+      "size": 835,
+      "sha256": "aa4c50a86fac36b81ff8fcad76a1293c80ea4ab406b7fafa7c2d658bc88a174f"
+    },
+    {
+      "path": "NOTICE.md",
+      "size": 1260,
+      "sha256": "47034346e543ef5d64854a5edb76305b89d00a08684c8545868976668c94ba5c"
+    },
+    {
+      "path": "README.md",
+      "size": 3197,
+      "sha256": "1bdf000304f52e2df14ca034e622ff12dedd222e5b45e7d0ae59ffc738cacde6"
+    },
+    {
+      "path": "docs/ACCEPTANCE-TESTS.md",
+      "size": 1923,
+      "sha256": "f938f59f19be5d933d2ac79273dba34e9168379f879e895fde0d27114a5397d1"
+    },
+    {
+      "path": "docs/AGENT-CATALOG.md",
+      "size": 2030,
+      "sha256": "cf2d96334020b8e9fdfaa6eb18a4ed661e18b8a788df5587835b22f7795a0b08"
+    },
+    {
+      "path": "docs/DECISION-LOG.md",
+      "size": 1376,
+      "sha256": "769790eee7ba9162833f6f55b77986b40c75282582d2608334ebf6f1a88c7f04"
+    },
+    {
+      "path": "docs/FILE-CREATION-PLAN.md",
+      "size": 4306,
+      "sha256": "6b26f527bc6fc4c8de25e282ab51e1c88f9fbca981752843152e3009559e40a7"
+    },
+    {
+      "path": "docs/IMPLEMENTATION-ROADMAP.md",
+      "size": 1333,
+      "sha256": "91cb2e66ee1259b818bc8e6752b848365341a9d2660d2322240e225b73efccde"
+    },
+    {
+      "path": "docs/PACKAGE-MANIFEST.md",
+      "size": 1838,
+      "sha256": "b7655a3a6e5556bd599b9c335abbb27ef8ec607dda72b6849636f703e6bd38f1"
+    },
+    {
+      "path": "docs/PRODUCT-SPECIFICATION.md",
+      "size": 2130,
+      "sha256": "dff79a759ea0b188e75936c12f9e35f2d0aa987a3addf1399bc287cae041dd1b"
+    },
+    {
+      "path": "docs/SOURCE-TRACEABILITY.md",
+      "size": 2951,
+      "sha256": "fcbdf6d2c6b9de2b1a9f23e39d9e4de751e608f11a1f8e8f1fe30bcb248b5218"
+    }
+  ]
+}
