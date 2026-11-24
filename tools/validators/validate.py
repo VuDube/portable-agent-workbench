@@ -36,6 +36,8 @@ for p in ROOT.glob('03-AGENTS/**/AGENT.md'):
     if name != p.parent.name:
         fail(f'agent name does not match directory: {p.relative_to(ROOT)}')
     ids.append(name)
+if len(ids) != len(set(ids)):
+    fail('duplicate agent identifiers: ' + ', '.join(sorted({x for x in ids if ids.count(x) > 1})))
 for p in ROOT.glob('04-SKILLS/**/SKILL.md'):
     text=p.read_text()
     if not text.startswith('---\n'): fail(f'skill frontmatter missing: {p.relative_to(ROOT)}'); continue
