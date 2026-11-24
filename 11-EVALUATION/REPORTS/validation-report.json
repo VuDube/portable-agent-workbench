@@ -1,0 +1,147 @@
+{
+  "tested_commit": "a9d6925c2445728baf01a0cdee0391dd10fa559b",
+  "tests": [
+    {
+      "test_id": "STRUCT-agent.schema",
+      "objective": "Parse and inspect JSON Schema",
+      "status": "PASS",
+      "expected": "The declared acceptance condition is satisfied.",
+      "actual": "JSON parsed; object schema and required properties present",
+      "evidence": "10-SCHEMAS/agent.schema.json"
+    },
+    {
+      "test_id": "STRUCT-evidence.schema",
+      "objective": "Parse and inspect JSON Schema",
+      "status": "PASS",
+      "expected": "The declared acceptance condition is satisfied.",
+      "actual": "JSON parsed; object schema and required properties present",
+      "evidence": "10-SCHEMAS/evidence.schema.json"
+    },
+    {
+      "test_id": "STRUCT-platform-adapter.schema",
+      "objective": "Parse and inspect JSON Schema",
+      "status": "PASS",
+      "expected": "The declared acceptance condition is satisfied.",
+      "actual": "JSON parsed; object schema and required properties present",
+      "evidence": "10-SCHEMAS/platform-adapter.schema.json"
+    },
+    {
+      "test_id": "STRUCT-project-state.schema",
+      "objective": "Parse and inspect JSON Schema",
+      "status": "PASS",
+      "expected": "The declared acceptance condition is satisfied.",
+      "actual": "JSON parsed; object schema and required properties present",
+      "evidence": "10-SCHEMAS/project-state.schema.json"
+    },
+    {
+      "test_id": "STRUCT-release-manifest.schema",
+      "objective": "Parse and inspect JSON Schema",
+      "status": "PASS",
+      "expected": "The declared acceptance condition is satisfied.",
+      "actual": "JSON parsed; object schema and required properties present",
+      "evidence": "10-SCHEMAS/release-manifest.schema.json"
+    },
+    {
+      "test_id": "STRUCT-skill.schema",
+      "objective": "Parse and inspect JSON Schema",
+      "status": "PASS",
+      "expected": "The declared acceptance condition is satisfied.",
+      "actual": "JSON parsed; object schema and required properties present",
+      "evidence": "10-SCHEMAS/skill.schema.json"
+    },
+    {
+      "test_id": "STRUCT-test-result.schema",
+      "objective": "Parse and inspect JSON Schema",
+      "status": "PASS",
+      "expected": "The declared acceptance condition is satisfied.",
+      "actual": "JSON parsed; object schema and required properties present",
+      "evidence": "10-SCHEMAS/test-result.schema.json"
+    },
+    {
+      "test_id": "STRUCT-workflow.schema",
+      "objective": "Parse and inspect JSON Schema",
+      "status": "PASS",
+      "expected": "The declared acceptance condition is satisfied.",
+      "actual": "JSON parsed; object schema and required properties present",
+      "evidence": "10-SCHEMAS/workflow.schema.json"
+    },
+    {
+      "test_id": "SKILL-001",
+      "objective": "Validate every skill frontmatter and name",
+      "status": "PASS",
+      "expected": "The declared acceptance condition is satisfied.",
+      "actual": "54 skills checked; failures=0",
+      "evidence": "tools/validators/validate.py"
+    },
+    {
+      "test_id": "AGENT-001",
+      "objective": "Validate agent identifiers and directories",
+      "status": "PASS",
+      "expected": "The declared acceptance condition is satisfied.",
+      "actual": "48 files; unique_ids=48; failures=0",
+      "evidence": "tools/validators/validate.py"
+    },
+    {
+      "test_id": "DOC-001",
+      "objective": "Validate internal Markdown links",
+      "status": "PASS",
+      "expected": "The declared acceptance condition is satisfied.",
+      "actual": "broken_links=0",
+      "evidence": "tools/validators/run_all.py"
+    },
+    {
+      "test_id": "DOC-002",
+      "objective": "Detect empty repository files",
+      "status": "PASS",
+      "expected": "The declared acceptance condition is satisfied.",
+      "actual": "empty_files=0",
+      "evidence": "tools/validators/run_all.py"
+    },
+    {
+      "test_id": "SEC-001",
+      "objective": "Scan tracked text for common credential patterns",
+      "status": "PASS",
+      "expected": "The declared acceptance condition is satisfied.",
+      "actual": "potential_hits=0",
+      "evidence": "tools/validators/run_all.py"
+    },
+    {
+      "test_id": "STRUCT-REQUIRED",
+      "objective": "Check mandatory repository records exist",
+      "status": "PASS",
+      "expected": "The declared acceptance condition is satisfied.",
+      "actual": "missing=[]",
+      "evidence": "tools/validators/validate.py"
+    },
+    {
+      "test_id": "CAT-001",
+      "objective": "Check mandatory agent and skill coverage",
+      "status": "PASS",
+      "expected": "The declared acceptance condition is satisfied.",
+      "actual": "agents=48 skills=54",
+      "evidence": "docs/AGENT-CATALOG.md; docs/SKILL-CATALOG.md"
+    },
+    {
+      "test_id": "REG-001",
+      "objective": "Run repository structural validator",
+      "status": "PASS",
+      "expected": "The declared acceptance condition is satisfied.",
+      "actual": "VALIDATION PASSED",
+      "evidence": "tools/validators/validate.py"
+    },
+    {
+      "test_id": "BASE-001",
+      "objective": "Confirm every original baseline file remains present",
+      "status": "PASS",
+      "expected": "The declared acceptance condition is satisfied.",
+      "actual": "baseline_present=45/45",
+      "evidence": "archive SHA-256 recorded in docs/BASELINE-AUDIT.md"
+    }
+  ],
+  "summary": {
+    "passed": 17,
+    "failed": 0,
+    "blocked": 0,
+    "not_run": 0
+  }
+}

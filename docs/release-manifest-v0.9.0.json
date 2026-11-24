@@ -1,0 +1,29 @@
+{
+  "version": "v0.9.0",
+  "commit": "a9d6925c2445728baf01a0cdee0391dd10fa559b",
+  "tag": "not-created-release-candidate",
+  "artifacts": [
+    {
+      "path": "11-EVALUATION/REPORTS/validation-report.json",
+      "sha256": "b22d058c01d2851deb336ee5818b8ee77bd27db7ae315ed95ef5eadfd0b6c8c9"
+    },
+    {
+      "path": "11-EVALUATION/REPORTS/validation-report.md",
+      "sha256": "bb51c087c09f877ee60cb3b0276c5f7a3a5f5982bcbfad4cc0d3bcdb387a8188"
+    }
+  ],
+  "validation": {
+    "passed": [
+      "17 dependency-free local validation checks",
+      "baseline source preservation",
+      "agent and skill structural coverage",
+      "internal Markdown links",
+      "common credential-pattern scan"
+    ],
+    "blocked": [
+      "live testing of eight platform adapters",
+      "complete manual usability and adversarial testing",
+      "final v1.0.0 release approval"
+    ]
+  }
+}

@@ -8,6 +8,7 @@
 - Archive readable, SHA-256 recorded, safe extraction completed, and 45-file remote baseline reconciled.
 - Universal core, six investigation workflows, schemas, governance, agent and skill catalogues, workflow procedures, adapter documentation, and evaluation records exist.
 - Local structural validation passes at commit `290b0723a61eaef379e9425251525836932fbcf8`.
+- The dependency-free comprehensive validation runner records 17 PASS, 0 FAIL, 0 BLOCKED, and 0 NOT RUN for its executable local scope.
 
 ## Blocking or pending
 

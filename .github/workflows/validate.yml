@@ -17,3 +17,5 @@ jobs:
           python-version: '3.x'
       - name: Validate repository structure and metadata
         run: python3 tools/validators/validate.py
+      - name: Run comprehensive validation and regression checks
+        run: python3 tools/validators/run_all.py
