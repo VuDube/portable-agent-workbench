@@ -3,7 +3,7 @@
 **Universal AI instructions, specialist agents, portable skills and evidence-led workflows.**
 
 - **Repository:** `portable-agent-workbench`
-- **Initial package:** v0.1.0 implementation blueprint
+- **Current development line:** post-v0.1.0 implementation milestones; no v1.0.0 release yet
 - **Primary formats:** Markdown, YAML frontmatter, JSON, JSON Schema
 - **Operating model:** instructions-first; host-native tools are optional
 - **Hard constraints:** no mandatory CLI, terminal, VPS, local server, API key, paid API, or proprietary coding-agent runtime.
@@ -20,6 +20,8 @@ PAW is a portable library of instructions and structured skills. It is designed 
 4. Activate only the relevant skill from `04-SKILLS/`.
 5. Use the `08-PLATFORM-ADAPTERS/` guide for the host application.
 6. Preserve project continuity using `09-TEMPLATES/PROJECT-STATE-TEMPLATE.md`.
+
+The current catalogue includes 46 mandatory specialist roles, 54 reusable skills, eight workflow procedures plus six investigation procedures, provider-neutral schemas, governance files, and eight documented-but-unverified platform adapters. See the [release-readiness record](11-EVALUATION/RELEASE-READINESS.md) for what is and is not tested.
 
 ## Capability tiers
 
@@ -40,13 +42,13 @@ A specification gate separates discovery from implementation. No implementation 
 
 ## Repository status
 
-This package is an initial, usable foundation and implementation specification. It is not a claim that the entire proposed future agent/skill catalog has already been built or cross-platform tested. See `docs/FILE-CREATION-PLAN.md`, `docs/SOURCE-TRACEABILITY.md`, and `docs/ACCEPTANCE-TESTS.md`.
+The repository is an actively developed, usable instruction-first workbench. Structural content has been implemented beyond the original baseline, but v1.0.0 is not released: live cross-platform compatibility, complete manual evaluation, final release evidence, and release gates remain open. See the [baseline audit](docs/BASELINE-AUDIT.md), [source traceability](docs/SOURCE-TRACEABILITY.md), [acceptance tests](docs/ACCEPTANCE-TESTS.md), and [release readiness](11-EVALUATION/RELEASE-READINESS.md).
 
 ## Sources and attribution
 
 PAW uses original, independently written instructions informed by public project documentation and interface concepts. It does not bundle upstream source code, agent prompt files, logos, trademarks, binaries, or assets.
 
-See [`13-REFERENCE/UPSTREAM-SOURCES.md`](13-REFERENCE/UPSTREAM-SOURCES.md) and [`NOTICE.md`](NOTICE.md).
+See [`docs/UPSTREAM-SOURCES.md`](docs/UPSTREAM-SOURCES.md), [`docs/LICENCE-AND-ATTRIBUTION-REVIEW.md`](docs/LICENCE-AND-ATTRIBUTION-REVIEW.md), and [`NOTICE.md`](NOTICE.md).
 
 ## License
 

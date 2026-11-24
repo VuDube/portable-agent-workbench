@@ -3,19 +3,19 @@
 ## v0.1.0 — Foundation (this package)
 Master system prompt, orchestrator, five operational agents, five skills, initial workflows, platform notes, schemas, source traceability and acceptance plan.
 
-## v0.2.0 — Core completion
+## v0.2.0 — Core completion (implemented in working tree; not tagged)
 Task classifier, agent/skill selector, evidence auditor, security reviewer, full templates and schema validation.
 
-## v0.3.0 — Research and REA coverage
+## v0.3.0 — Research and REA coverage (implemented in working tree; not tagged)
 Six guided investigation workflows, source-code/dependency/API analysis skills, version comparison and residual-unknowns audits.
 
-## v0.4.0 — Product creation
+## v0.4.0 — Product creation (partially implemented; not tagged)
 Complete Study/Specify/Build/Check/Refine/Accept workflow, website/app/product development agents, UI/UX and architecture skills.
 
-## v0.5.0 — QA and security
+## v0.5.0 — QA and security (foundations implemented; execution evidence pending)
 Prompt injection evaluation, agent/skill test cases, security/privacy workflows, regression and release checks.
 
-## v0.6.0 — Platform adapters
+## v0.6.0 — Platform adapters (documentation implemented; live tests pending)
 Specific documented setup and test reports for Gemini, AI Studio, ChatGPT, Manus, Vibe, Qwen, DeepSeek and Agora.
 
 ## v0.7.0 — Specialist domain expansion
