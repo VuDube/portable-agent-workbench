@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: Portable Agent Workbench
+message: Cite this repository when reusing PAW-authored instructions, schemas, or workflows.
+type: software
+authors:
+  - family-names: VuDube
+repository-code: https://github.com/VuDube/portable-agent-workbench
+license: MIT
+version: 0.1.1

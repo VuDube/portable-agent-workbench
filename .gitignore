@@ -1,0 +1,23 @@
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secrets and local state
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets/
+
+# Generated/local artefacts
+.cache/
+build/
+dist/
+coverage/
+reports/local/
+__pycache__/
+*.pyc
