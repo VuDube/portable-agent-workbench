@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/VuDube/portable-agent-workbench/schema/project-state.json",
+  "title": "PAW project state",
+  "type": "object",
+  "required": [
+    "project_id",
+    "objective",
+    "status",
+    "last_completed_step",
+    "next_action",
+    "open_unknowns"
+  ],
+  "properties": {
+    "project_id": {
+      "type": "string"
+    },
+    "objective": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "NOT STARTED",
+        "IN PROGRESS",
+        "BLOCKED",
+        "UNDER REVIEW",
+        "PASSED",
+        "FAILED",
+        "DEFERRED WITH APPROVAL"
+      ]
+    },
+    "last_completed_step": {
+      "type": "string"
+    },
+    "next_action": {
+      "type": "string"
+    },
+    "open_unknowns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "approvals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/VuDube/portable-agent-workbench/schema/platform-adapter.json",
+  "title": "PAW platform adapter",
+  "type": "object",
+  "required": [
+    "id",
+    "platform",
+    "status",
+    "core_fallback",
+    "capabilities"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "platform": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "designed",
+        "documented",
+        "partially-tested",
+        "tested",
+        "blocked"
+      ]
+    },
+    "version_checked": {
+      "type": "string"
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "status"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "available",
+              "partial",
+              "unverified",
+              "unavailable"
+            ]
+          },
+          "evidence": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "core_fallback": {
+      "type": "string"
+    },
+    "privacy_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/VuDube/portable-agent-workbench/schema/skill.json",
+  "title": "PAW skill metadata",
+  "type": "object",
+  "required": [
+    "name",
+    "description",
+    "capability_tier"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "pattern": "^[a-z0-9](?:[a-z0-9-]{0,62}[a-z0-9])?$"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1024
+    },
+    "capability_tier": {
+      "enum": [
+        "T0",
+        "T1",
+        "T2",
+        "T3"
+      ]
+    },
+    "license": {
+      "type": "string"
+    },
+    "compatibility": {
+      "type": "string",
+      "maxLength": 500
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

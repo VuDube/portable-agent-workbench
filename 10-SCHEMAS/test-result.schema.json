@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/VuDube/portable-agent-workbench/schema/test-result.json",
+  "title": "PAW test result",
+  "type": "object",
+  "required": [
+    "test_id",
+    "objective",
+    "status",
+    "expected",
+    "actual",
+    "evidence"
+  ],
+  "properties": {
+    "test_id": {
+      "type": "string"
+    },
+    "requirement_id": {
+      "type": "string"
+    },
+    "objective": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "BLOCKED",
+        "NOT RUN"
+      ]
+    },
+    "expected": {
+      "type": "string"
+    },
+    "actual": {
+      "type": "string"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "defect_reference": {
+      "type": "string"
+    }
+  }
+}
