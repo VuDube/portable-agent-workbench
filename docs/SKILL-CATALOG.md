@@ -1,0 +1,55 @@
+# Skill catalogue
+
+The v1 catalogue contains 51 provider-neutral skills. Each skill has a discoverable `SKILL.md`, strict name/description frontmatter, progressive instructions, an output contract, and capability fallback language.
+
+- `deep-research` — research across authoritative sources and synthesize evidence.
+- `evidence-led-research` — maintain an evidence ledger while researching.
+- `fact-verification` — verify discrete claims and classify support.
+- `citation-auditing` — check citation completeness and entailment.
+- `source-quality-assessment` — rate source authority, freshness, and relevance.
+- `competitive-research` — run bounded fair product comparisons.
+- `repository-forensic-audit` — inventory a repository or archive safely.
+- `source-tree-inspection` — map files, directories, and conventions.
+- `dependency-analysis` — identify components and version risks.
+- `architecture-reconstruction` — infer architecture from permitted artefacts.
+- `change-impact-analysis` — trace likely impact of a proposed change.
+- `licence-review` — review declared licences and attribution boundaries.
+- `repository-migration-verification` — reconcile source and destination trees.
+- `requirements-decomposition` — turn objectives into testable requirements.
+- `technical-specification` — write implementation-ready technical contracts.
+- `architecture-design` — design provider-neutral system boundaries.
+- `implementation-planning` — sequence a safe implementation tranche.
+- `code-review` — review changes for correctness and maintainability.
+- `api-contract-analysis` — analyse interfaces, schemas, errors, and versioning.
+- `documentation-engineering` — build navigable, maintainable technical docs.
+- `feature-investigation` — investigate an observed feature with evidence.
+- `application-version-comparison` — compare pinned versions without overclaiming.
+- `behaviour-reconstruction` — reconstruct behaviour from observations.
+- `crash-investigation` — trace a crash through bounded evidence.
+- `residual-unknowns-analysis` — audit and prioritise unresolved questions.
+- `bounded-process-capture-planning` — plan safe limited runtime capture.
+- `reconstruction-verification` — verify a reconstruction against an oracle.
+- `test-planning` — design layered tests and oracles.
+- `acceptance-testing` — assess a deliverable against acceptance criteria.
+- `regression-analysis` — identify and test change regressions.
+- `evidence-based-qa` — review quality claims against evidence.
+- `release-readiness-assessment` — assess release gates and blockers.
+- `output-validation` — validate structured output against a contract.
+- `threat-modelling` — model assets, actors, boundaries, and abuse cases.
+- `secrets-detection` — scan for likely credentials without exposing them.
+- `privacy-review` — review collection, routing, retention, and export.
+- `dependency-and-supply-chain-review` — review dependency provenance and update risk.
+- `prompt-injection-resistance` — test handling of hostile embedded instructions.
+- `untrusted-input-handling` — classify and safely process external content.
+- `product-discovery` — frame user problems and measurable outcomes.
+- `product-requirements` — write product requirements and acceptance criteria.
+- `product-roadmap-development` — sequence milestones, dependencies, and risk.
+- `workflow-design` — turn a repeatable task into a manual procedure.
+- `project-state-management` — preserve resumable state across handoffs.
+- `release-planning` — prepare scope freeze, evidence, and release steps.
+- `technical-handoff` — package a result for another person or host.
+- `platform-capability-assessment` — assess host features and fallbacks.
+- `system-prompt-adaptation` — adapt universal instructions without changing their contract.
+- `agent-skills-portability-review` — check skill portability and capability loss.
+- `tool-availability-verification` — verify actual tools and permissions before use.
+- `cross-platform-output-normalisation` — normalise results across host formats.

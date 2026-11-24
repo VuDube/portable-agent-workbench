@@ -1,29 +1,50 @@
-# Agent catalog and ranking policy
+# Agent catalogue
 
-The initial package contains five operational agents. This catalog defines the complete intended coverage, not a claim that all agents have already been authored.
+The v1 catalogue contains 46 distinct role specifications. Each file declares a bounded mission, inputs, outputs, exclusions, procedure, approval boundaries, quality criteria, and limitations. Presence is not proof that the role was independently executed or platform-tested.
 
-## Priority definitions
-
-- **P0 — Foundational:** required for reliable operation of the framework.
-- **P1 — Core task execution:** required for the primary research, audit and development use cases.
-- **P2 — Specialist engineering:** activated for relevant technical domains.
-- **P3 — Business and creative:** activated for non-engineering business and creative tasks.
-- **P4 — Regulated/specialized:** high-context roles requiring additional safeguards and human expert review.
-
-## P0
-Master Orchestrator; Requirements Architect; Research Director; Evidence Auditor; Forensic Repository Analyst; Software Architect; QA Auditor; Security Reviewer; Project State Manager.
-
-## P1
-API Analyst; Source Code Analyst; Dependency Auditor; Reverse Engineering Analyst; Website Analyst; Product Architect; Frontend Engineer; Backend Engineer; Full-Stack Engineer; Database Architect; UI/UX Designer; Test Engineer; Documentation Engineer; Automation Architect; Deployment Advisor.
-
-## P2
-Accessibility Auditor; Performance Analyst; Cloud/Infrastructure Advisor; Mobile Engineer; AI Systems Engineer; Integration Architect; Data Analyst; Incident Response Analyst; Release Manager.
-
-## P3
-Brand Strategist; Content Strategist; Marketing Strategist; SEO Specialist; Sales Strategist; Customer Support Designer; Finance Analyst; Project Manager; Visual Storyteller.
-
-## P4
-Academic Research Specialist; GIS Specialist; Healthcare Information Specialist; Game Development Specialist; Spatial Computing Specialist; other domain specialists added only with clear scope boundaries and qualified-human review rules.
-
-## Agent acceptance
-Every agent must have a unique mission, bounded responsibilities, defined inputs/outputs, execution procedure, capability requirements, escalation rules, evaluation cases and non-duplication review.
+- `research-director` — Research Director: direct complex research programmes, source plans, evidence synthesis, and unresolved-question tracking.
+- `deep-research-analyst` — Deep Research Analyst: investigate a bounded question across independent authoritative sources and reconcile contradictions.
+- `fact-verification-specialist` — Fact Verification Specialist: test individual claims against primary or authoritative evidence and classify their support.
+- `source-and-citation-auditor` — Source and Citation Auditor: audit whether citations actually support claims and whether source metadata is complete.
+- `competitive-intelligence-analyst` — Competitive Intelligence Analyst: compare products or organisations using a declared and fair comparison frame.
+- `technical-documentation-researcher` — Technical Documentation Researcher: locate, interpret, and version-pin technical documentation for implementation decisions.
+- `market-and-product-research-analyst` — Market and Product Research Analyst: analyse public market, customer, and product evidence without presenting estimates as facts.
+- `requirements-architect` — Requirements Architect: turn ambiguous objectives into testable requirements, constraints, and acceptance criteria.
+- `product-strategist` — Product Strategist: connect user problems, outcomes, positioning, and sequencing into a coherent strategy.
+- `product-manager` — Product Manager: maintain scope, priorities, dependencies, and delivery decisions across a product increment.
+- `business-analyst` — Business Analyst: model processes, actors, rules, risks, and measurable business outcomes.
+- `user-journey-analyst` — User Journey Analyst: map user tasks, friction, accessibility needs, and handoffs across a journey.
+- `product-acceptance-auditor` — Product Acceptance Auditor: independently check a deliverable against agreed user and product acceptance criteria.
+- `principal-software-architect` — Principal Software Architect: own system-level trade-offs, boundaries, quality attributes, and evolution strategy.
+- `systems-architect` — Systems Architect: design interactions among services, runtimes, operators, and external dependencies.
+- `application-architect` — Application Architect: define application modules, contracts, lifecycle, and maintainable internal boundaries.
+- `api-and-integration-architect` — API and Integration Architect: design stable interfaces, integration contracts, versioning, errors, and capability fallbacks.
+- `database-and-data-architect` — Database and Data Architect: design data ownership, schemas, retention, migration, integrity, and privacy boundaries.
+- `frontend-engineer` — Frontend Engineer: translate interaction requirements into accessible, testable interface implementation guidance.
+- `backend-engineer` — Backend Engineer: design reliable server-side behaviour, validation, error handling, and observability.
+- `full-stack-engineer` — Full-Stack Engineer: coordinate end-to-end feature delivery across interface, service, data, and tests.
+- `automation-engineer` — Automation Engineer: design safe repeatable automation with idempotency, scheduling, retries, and human gates.
+- `platform-integration-engineer` — Platform Integration Engineer: adapt provider-neutral assets to a host while recording capability loss and verification status.
+- `forensic-repository-analyst` — Forensic Repository Analyst: inventory repository history, structure, provenance, and integrity without altering evidence.
+- `software-behaviour-investigator` — Software Behaviour Investigator: derive bounded behavioural observations from permitted black-box interaction.
+- `application-reverse-engineering-analyst` — Application Reverse-Engineering Analyst: coordinate static and dynamic application investigation while separating tools from conclusions.
+- `dependency-and-component-analyst` — Dependency and Component Analyst: identify components, versions, provenance, and dependency risk from available evidence.
+- `version-comparison-analyst` — Version Comparison Analyst: compare pinned application versions and explain observed deltas with coverage limits.
+- `runtime-investigation-analyst` — Runtime Investigation Analyst: plan or interpret bounded runtime observations with explicit side-effect controls.
+- `reconstruction-verification-analyst` — Reconstruction Verification Analyst: test whether a reconstruction reproduces a declared original behaviour using an explicit oracle.
+- `residual-unknowns-auditor` — Residual Unknowns Auditor: audit unresolved questions and prevent conclusions from outrunning evidence coverage.
+- `qa-director` — QA Director: define quality strategy, evidence standards, test coverage, and release risk posture.
+- `test-architect` — Test Architect: design layered tests, fixtures, oracles, traceability, and maintainable test suites.
+- `functional-test-engineer` — Functional Test Engineer: execute or document user-visible functional tests with reproducible steps.
+- `regression-test-engineer` — Regression Test Engineer: identify change impact and preserve tests for previously verified behaviour.
+- `security-auditor` — Security Auditor: review trust boundaries, controls, evidence, and material security weaknesses.
+- `threat-modelling-specialist` — Threat Modelling Specialist: model assets, actors, trust boundaries, abuse cases, and mitigations.
+- `privacy-and-data-protection-auditor` — Privacy and Data Protection Auditor: review collection, routing, retention, export, and deletion of personal or sensitive data.
+- `software-supply-chain-auditor` — Software Supply-Chain Auditor: assess dependency provenance, licences, integrity, update paths, and build risks.
+- `release-readiness-auditor` — Release Readiness Auditor: independently assess whether release gates have evidence and whether blockers remain.
+- `technical-writer` — Technical Writer: turn verified product knowledge into clear task-oriented documentation.
+- `developer-experience-specialist` — Developer Experience Specialist: reduce setup, contribution, debugging, and handoff friction for technical users.
+- `repository-maintainer` — Repository Maintainer: keep structure, metadata, links, conventions, and maintenance records coherent.
+- `release-manager` — Release Manager: coordinate versioning, freeze scope, manifests, changelog, tags, and release evidence.
+- `implementation-project-manager` — Implementation Project Manager: sequence work, dependencies, owners, risks, and approvals across the roadmap.
+- `documentation-quality-auditor` — Documentation Quality Auditor: check completeness, clarity, links, terminology, claims, and audience fit.
