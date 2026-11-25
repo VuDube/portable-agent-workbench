@@ -21,7 +21,7 @@ PAW is a portable library of instructions and structured skills. It is designed 
 5. Use the `08-PLATFORM-ADAPTERS/` guide for the host application.
 6. Preserve project continuity using `09-TEMPLATES/PROJECT-STATE-TEMPLATE.md`.
 
-The current catalogue includes 46 mandatory specialist roles, 54 reusable skills, eight workflow procedures plus six investigation procedures, provider-neutral schemas, governance files, and eight documented-but-unverified platform adapters. See the [release-readiness record](11-EVALUATION/RELEASE-READINESS.md) for what is and is not tested.
+The current catalogue includes 46 mandatory specialist roles, 54 reusable skills, eight workflow procedures plus six investigation procedures, provider-neutral schemas, governance files, and eight platform adapters. Platform-specific forensic prompts are in `12-PLATFORM-COMPATIBILITY-PROMPTS/`; Manus has partial dated evidence while the other adapters remain unverified. See the [release-readiness record](11-EVALUATION/RELEASE-READINESS.md) for what is and is not tested.
 
 ## Capability tiers
 
