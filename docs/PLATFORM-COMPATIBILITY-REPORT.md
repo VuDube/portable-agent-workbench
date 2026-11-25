@@ -2,8 +2,8 @@
 
 **Report date:** 2026-11-25  
 **Repository:** [VuDube/portable-agent-workbench](https://github.com/VuDube/portable-agent-workbench)  
-**Assessed repository commit:** `04f88a01f6ed70dcc4eb537188313c71f95c2e21`  
-**Overall status:** Documented adapters exist; live PAW compatibility remains unverified for all eight named platforms.  
+**Assessed repository commit:** `40c27d189dc7117336bb3ed40f321c5e62045405`  
+**Overall status:** All eight adapters are documented; Manus has partial dated compatibility evidence, while complete live compatibility remains unverified for all eight named platforms.  
 **v1.0.0 impact:** The platform-compatibility release gate remains open and blocks a production v1.0.0 label.
 
 ## Interpretation of statuses
@@ -26,7 +26,7 @@ A platform may be documented and test-ready at the same time. Neither status is 
 | ChatGPT | Yes | Not verified | No | documented | R1 — documented | Blocking | `08-PLATFORM-ADAPTERS/CHATGPT/ADAPTER.md`; no live test record |
 | Gemini | Yes | Not verified | No | documented | R1 — documented | Blocking | `08-PLATFORM-ADAPTERS/GEMINI/ADAPTER.md`; no live test record |
 | Google AI Studio | Yes | Not verified | No | documented | R1 — documented | Blocking | `08-PLATFORM-ADAPTERS/GOOGLE-AI-STUDIO/ADAPTER.md`; no live test record |
-| Manus | Yes | Yes, current Manus execution environment | No | documented / test-ready | R2 — test-ready | Blocking | `08-PLATFORM-ADAPTERS/MANUS/ADAPTER.md`; current session tools verified; no PAW compatibility test record |
+| Manus | Yes | Yes, current Manus execution environment | Partial | partially tested | R3 — partially tested | Blocking | `11-EVALUATION/REPORTS/manus-compatibility-test-log.md`; 10 executable checks passed; native PAW behaviours remain untested |
 | Mistral Vibe | Yes | Not verified | No | documented | R1 — documented | Blocking | `08-PLATFORM-ADAPTERS/MISTRAL-VIBE/ADAPTER.md`; no live test record |
 | Qwen | Yes | Not verified | No | documented | R1 — documented | Blocking | `08-PLATFORM-ADAPTERS/QWEN/ADAPTER.md`; no live test record |
 | DeepSeek | Yes | Not verified | No | documented | R1 — documented | Blocking | `08-PLATFORM-ADAPTERS/DEEPSEEK/ADAPTER.md`; no live test record |
@@ -54,9 +54,9 @@ A valid test must distinguish Google AI Studio web behaviour from Gemini API beh
 
 ### Manus
 
-The Manus adapter documentation exists, and the current environment exposes Manus browser tools and Manus execution capabilities. PAW repository operations, file operations, GitHub operations, CI verification, and local PAW validation have been executed successfully in this session. Those facts verify the execution environment and the PAW engineering workflow, but they do **not** yet constitute a formal PAW-Manus adapter compatibility test.
+The Manus adapter documentation exists, and the current environment exposes Manus browser tools and Manus execution capabilities. A dated compatibility run on 2026-11-25 passed 10 executable checks: PAW core/skill/agent/workflow specification loading, project-state required-field validation, local file round-trip, Git remote access, live browser access to the public repository, fallback-contract inspection, and non-execution handling of an untrusted-input fixture. The machine-readable report is `11-EVALUATION/REPORTS/manus-compatibility-test-report.json`; the detailed log is `11-EVALUATION/REPORTS/manus-compatibility-test-log.md`; live browser observations are `11-EVALUATION/REPORTS/manus-observations.json`.
 
-The Manus adapter should therefore be classified as **test-ready**, not tested. A formal test must execute the PAW core contract, load a PAW skill, invoke at least one specialist role, run a workflow, validate structured output against a PAW schema, test missing-tool fallback, test untrusted-input handling, and record actual Manus capability and output evidence.
+The Manus adapter is therefore **partially tested**, not fully tested. The run did not establish native injection of the PAW core as system/developer instructions, native skill activation, independent specialist-agent invocation, PAW-native workflow execution, native host-enforced structured output, or complete account/MCP permission coverage. Those limitations are explicit in the test report, so the adapter remains blocking for release.
 
 ### Mistral Vibe
 
@@ -86,7 +86,7 @@ Agora must be tested as an Android application and not treated as equivalent to 
 
 The current matrix supports the following factual conclusion:
 
-**8/8 adapters are documented; 0/8 have formal live PAW compatibility test records; 1/8 is test-ready in the current environment; 7/8 have no verified execution environment in the current evidence set; 0/8 are tested; 0/8 are release-ready.**
+**8/8 adapters are documented; 1/8 is partially tested; 0/8 are fully tested; 0/8 are release-ready; 7/8 have no verified execution environment in the current evidence set.** Manus evidence improves the factual status but does not close the platform gate because the declared Manus adapter scope is incomplete and the other seven platforms remain untested.
 
 The local PAW repository and CI validation gates pass within their declared scope. They do not replace platform execution evidence. The platform gate must remain open until the test records described above are executed and reviewed.
 

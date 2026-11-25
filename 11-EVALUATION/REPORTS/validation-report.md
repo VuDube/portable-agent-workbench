@@ -1,6 +1,6 @@
 # Automated validation report
 
-- Tested commit: `b579c2c0fb2fdac6020e713f96f8c54d89e55cc8`
+- Tested commit: `40c27d189dc7117336bb3ed40f321c5e62045405`
 - Passed: 17
 - Failed: 0
 - Blocked: 0

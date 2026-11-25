@@ -1,0 +1,32 @@
+{
+  "observation_date": "2026-11-25",
+  "host": "Manus Sandbox",
+  "browser": {
+    "operation": "browser_navigate + browser_view",
+    "url": "https://github.com/VuDube/portable-agent-workbench",
+    "result": "PASS",
+    "observed_title": "GitHub - VuDube/portable-agent-workbench",
+    "observed_repository": "VuDube/portable-agent-workbench",
+    "observed_visibility": "Public",
+    "observed_branch": "main",
+    "observed_latest_commit": "40c27d1",
+    "screenshot": "/home/ubuntu/screenshots/github_2026-11-25_08-54-44_4710.webp",
+    "page_text": "/home/ubuntu/page_texts/github.com_VuDube_portable-agent-workbench.md"
+  },
+  "available_manus_tools_observed": [
+    "browser_navigate",
+    "browser_view",
+    "browser_click",
+    "browser_input",
+    "browser_scroll",
+    "browser_console_exec",
+    "browser_upload_file",
+    "generate_image",
+    "generate_video",
+    "generate_speech",
+    "generate_music",
+    "generate_sound_effect",
+    "generate_3d_model"
+  ],
+  "boundary": "These observations verify current Manus environment and browser/tool availability. They do not by themselves prove that every PAW instruction, skill, agent, workflow, or adapter behaves correctly in every Manus mode, model, account tier, or future build."
+}
