@@ -1,0 +1,32 @@
+{
+  "report_date": "2026-11-25",
+  "assessed_commit": "04f88a01f6ed70dcc4eb537188313c71f95c2e21",
+  "status_vocabulary": {
+    "documented": "Adapter documentation and portable fallback exist; no live compatibility evidence is implied.",
+    "test-ready": "The target execution environment is available, but the PAW test has not been executed and recorded.",
+    "partially-tested": "Some declared capabilities have actual dated evidence, but adapter scope is incomplete.",
+    "tested": "The declared adapter scope has a dated execution record with actual observed results and limitations.",
+    "release-ready": "Tested coverage is complete for the declared scope and included in release evidence.",
+    "blocked": "A required environment, permission, credential, or runtime is currently unavailable."
+  },
+  "summary": {
+    "platforms_assessed": 8,
+    "documented": 8,
+    "test_ready": 1,
+    "partially_tested": 0,
+    "tested": 0,
+    "release_ready": 0,
+    "blocked_or_unverified_execution_targets": 7,
+    "v1_release_gate": "BLOCKING"
+  },
+  "platforms": [
+    {"id":"chatgpt","name":"ChatGPT","adapter_path":"08-PLATFORM-ADAPTERS/CHATGPT/ADAPTER.md","documentation":"documented","environment":"not-verified","live_test":"not-executed","readiness":"R1","gate":"blocking","evidence":["adapter exists","no dated PAW live test record"]},
+    {"id":"gemini","name":"Gemini","adapter_path":"08-PLATFORM-ADAPTERS/GEMINI/ADAPTER.md","documentation":"documented","environment":"not-verified","live_test":"not-executed","readiness":"R1","gate":"blocking","evidence":["adapter exists","no dated PAW live test record"]},
+    {"id":"google-ai-studio","name":"Google AI Studio","adapter_path":"08-PLATFORM-ADAPTERS/GOOGLE-AI-STUDIO/ADAPTER.md","documentation":"documented","environment":"not-verified","live_test":"not-executed","readiness":"R1","gate":"blocking","evidence":["adapter exists","no dated PAW live test record"]},
+    {"id":"manus","name":"Manus","adapter_path":"08-PLATFORM-ADAPTERS/MANUS/ADAPTER.md","documentation":"documented","environment":"available-current-session","live_test":"not-executed","readiness":"R2","gate":"blocking","evidence":["adapter exists","current Manus execution environment and tools verified","no formal PAW-Manus compatibility record"]},
+    {"id":"mistral-vibe","name":"Mistral Vibe","adapter_path":"08-PLATFORM-ADAPTERS/MISTRAL-VIBE/ADAPTER.md","documentation":"documented","environment":"not-verified","live_test":"not-executed","readiness":"R1","gate":"blocking","evidence":["adapter exists","no dated PAW live test record"]},
+    {"id":"qwen","name":"Qwen","adapter_path":"08-PLATFORM-ADAPTERS/QWEN/ADAPTER.md","documentation":"documented","environment":"not-verified","live_test":"not-executed","readiness":"R1","gate":"blocking","evidence":["adapter exists","no dated PAW live test record"]},
+    {"id":"deepseek","name":"DeepSeek","adapter_path":"08-PLATFORM-ADAPTERS/DEEPSEEK/ADAPTER.md","documentation":"documented","environment":"not-verified","live_test":"not-executed","readiness":"R1","gate":"blocking","evidence":["adapter exists","no dated PAW live test record"]},
+    {"id":"agora","name":"Agora","adapter_path":"08-PLATFORM-ADAPTERS/AGORA/ADAPTER.md","documentation":"documented","environment":"not-verified","live_test":"not-executed","readiness":"R1","gate":"blocking","evidence":["adapter exists","no Android device/emulator or live Agora test record"]}
+  ]
+}
